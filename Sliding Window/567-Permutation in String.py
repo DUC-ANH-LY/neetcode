@@ -1,5 +1,6 @@
 class Solution:
     def checkInclusion(self, s1: str, s2: str) -> bool:
+        # O(n): shrink window
         l, n = 0, len(s2) 
         cnt = Counter(s1) 
         def check(a):
